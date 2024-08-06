@@ -1,8 +1,8 @@
-# Fitness22 Workout Tracker
+# Workout Tracker
 
 ## Overview
 
-Fitness22 Workout Tracker is a full-stack web application designed to help users track their workout routines and progress. Built with React and Node.js, this application offers a user-friendly interface for managing workout data and visualizing fitness progress over time.
+ Workout Tracker is a full-stack web application designed to help users track their workout routines and progress. Built with React and Node.js, this application offers a user-friendly interface for managing workout data and visualizing fitness progress over time.
 
 ## Features
 
