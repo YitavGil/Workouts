@@ -1,30 +1,95 @@
-# React + TypeScript + Vite
+# Fitness22 Workout Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+Fitness22 Workout Tracker is a full-stack web application designed to help users track their workout routines and progress. Built with React and Node.js, this application offers a user-friendly interface for managing workout data and visualizing fitness progress over time.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **Workout Logging**: Easily add, edit, and delete workout sessions.
+- **Progress Visualization**: View your workout progress through interactive charts.
+- **Responsive Design**: Fully responsive interface that works on desktop and mobile devices.
+- **Data Persistence**: All workout data is stored securely and can be accessed across sessions.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Tech Stack
 
-- Configure the top-level `parserOptions` property like this:
+### Frontend
+- React
+- TypeScript
+- Styled Components
+- Framer Motion for animations
+- Recharts for data visualization
+- Vite as the build tool
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+### Backend
+- Node.js
+- Express.js
+- MongoDB (or your chosen database)
+
+## Getting Started
+
+### Prerequisites
+- Node.js (v14 or later)
+- npm or yarn
+- MongoDB (if using MongoDB as your database)
+
+### Installation
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/YitavGil/Workouts.git
+   cd Workouts
+   ```
+
+2. Install dependencies for both frontend and backend:
+   ```
+   cd frontend
+   npm install
+   cd ../backend
+   npm install
+   ```
+
+3. Set up environment variables:
+   - Create a `.env` file in the backend directory
+   - Add necessary environment variables (e.g., DATABASE_URL, PORT)
+
+4. Start the backend server:
+   ```
+   cd backend
+   npm start
+   ```
+
+5. In a new terminal, start the frontend development server:
+   ```
+   cd frontend
+   npm run dev
+   ```
+
+6. Open your browser and navigate to `http://localhost:5173` (or the port Vite is running on)
+
+## Deployment
+
+The frontend is deployed on GitHub Pages. The backend needs to be deployed separately on a platform that supports Node.js applications (e.g., Heroku, DigitalOcean).
+
+To deploy frontend changes:
+```
+npm run deploy
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Future Additions
+
+### Calendar View for Workouts
+
+- **Implementation**: Replace the current list view of workouts with a calendar interface using [react-big-calendar](https://github.com/jquense/react-big-calendar).
+- **Benefits**: 
+  - Improved visual representation of workout schedules
+  - Easier tracking of workout frequency and patterns
+  - Ability to view workouts in day, week, and month formats
+  - Drag-and-drop functionality for easy rescheduling of workouts
+
+### Other Planned Features
+
+- User authentication and personalized profiles
+- Integration with fitness wearables for automatic workout logging
+- Social features to share and compare workouts with friends
+- Customizable workout plans and goal setting
